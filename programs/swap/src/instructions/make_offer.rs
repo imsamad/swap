@@ -64,7 +64,6 @@ pub fn send_offered_tokens_to_valut(
     Ok(())
 }
 
-
 pub fn save_offer(context: Context<MakeOffer>, id:u64, token_b_wanted_amount: u64) -> Result<()> {
     context.accounts.offer.set_inner(Offer {
         id,
